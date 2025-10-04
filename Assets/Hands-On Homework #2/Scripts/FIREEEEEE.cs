@@ -1,8 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class HW2PlayerShoot : MonoBehaviour
+public class FIREEEEEE : MonoBehaviour
 {
-    public GameObject preFab;
+   
+    public GameObject preFabcherry;
 
 
     public Transform bulletTrash;
@@ -11,7 +14,7 @@ public class HW2PlayerShoot : MonoBehaviour
 
     private const float Timer = 0.5f;
 
-    private float  _currentTime = 0.5f;
+    private float _currentTime = 0.5f;
 
     private bool _canShoot = true;
 
@@ -22,7 +25,7 @@ public class HW2PlayerShoot : MonoBehaviour
         Shoot();
 
 
-         
+
     }
     private void TimerMethod()
     {
@@ -41,9 +44,9 @@ public class HW2PlayerShoot : MonoBehaviour
 
     private void Shoot()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            GameObject bullet = Instantiate(preFab, bulletSpawn.position, Quaternion.identity);
+            GameObject bullet = Instantiate(preFabcherry, bulletSpawn.position, Quaternion.identity);
 
 
 
@@ -54,8 +57,5 @@ public class HW2PlayerShoot : MonoBehaviour
         }
     }
 
-
-
-
-
 }
+
