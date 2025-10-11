@@ -11,6 +11,8 @@ public class Geo : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    private SpriteRenderer sr;
+
     public int speed = 5;
 
     public string nextlevel = "Scene_2";
@@ -20,6 +22,7 @@ public class Geo : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+         sr= GetComponent<SpriteRenderer>();
 
     }
     int var = 3;
@@ -29,6 +32,20 @@ public class Geo : MonoBehaviour
         float xInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
 
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            sr.color = Color.yellow;
+
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            sr.color = Color.cyan;
+
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            sr.color = Color.magenta;
+        }
 
         /*
          if (Input.GetKeyDown(KeyCode.A))
@@ -38,6 +55,7 @@ public class Geo : MonoBehaviour
          if (Input.GetKeyDown(KeyCode.D))
          {
              rb.velocity = new Vector2(1, rb.velocity.y);
+
          }
 
           ------------------------------------
