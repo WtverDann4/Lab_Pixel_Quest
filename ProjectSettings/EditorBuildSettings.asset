@@ -27,9 +27,9 @@ EditorBuildSettings:
     path: Assets/Pixel_Quest/Scenes/Pixel_Quest_TestLevel.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Hands-On Homework #3/Scenes/HW3_Scene.unity
+    path: Assets/Hands-On Homework #3/Scenes/Level_2.unity
     guid: f75dcdb9bf8a1cd45a73fee947bce6b7
   - enabled: 1
-    path: Assets/Hands-On Homework #3/Scenes/level_2.unity
+    path: Assets/Hands-On Homework #3/Scenes/Level_1.unity
     guid: 6565f39596f4fba4ab495f83f6c7c33f
   m_configObjects: {}
